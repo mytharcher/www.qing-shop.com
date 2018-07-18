@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="description" content="为电商小微优质品牌量身打造的微信小程序商城平台，一键快捷授权接入生成，极速上架商城小程序，助力您的电商业务快速成长。" />
+<title>氢店 - 专业的小程序商城平台</title>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: MicrosoftYaHei
+}
+
+a {
+  text-decoration: none
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none
+}
+
+a:visited {
+  background-color: #fff;
+  text-decoration: none
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+.navbar-brand a {
+  margin-left: .5em;
+  font-size: 30px;
+  font-family: PingFang;
+  color: #fff;
+  line-height: 1;
+}
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  margin: .5em 1em;
+  color: #fff
+}
+
+.main {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  z-index: 9
+}
+
+.title {
+  font-size: 52px;
+  font-weight: normal;
+  color: #fff;
+  z-index: 7
+}
+
+.text-contain {
+  margin-top: 50px;
+}
+.text-contain li{
+  list-style: inside;
+  color: #fff;
+  line-height: 1.875;
+}
+
+.center {
+  padding-bottom: 100px;
+  padding-top: 70px
+}
+
+.center-title {
+  margin: 0 auto
+}
+
+.title-container {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center
+}
+
+.center-title {
+  font-size: 52px;
+  color: #2b2b2b;
+  line-height: .577
+}
+
+.sub-title-container {
+  text-align: center
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #b4b3b3
+}
+
+.item-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px
+}
+
+.item {
+  background: url('assets/img/item1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.item2 {
+  background: url('assets/img/item2.jpg')
+}
+
+.item3 {
+  background: url('assets/img/item3.jpg')
+}
+
+.item4 {
+  background: url('assets/img/item4.jpg')
+}
+
+.item-title {
+  font-size: 32px;
+  color: #fff;
+  line-height: .781
+}
+
+.item-text {
+  font-size: 16px;
+  color: #fff
+}
+
+.item-text-container {
+  padding-top: 20px
+}
+
+.item-title-container {
+  margin-top: 20px
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f7fa
+}
+
+.about-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center,
+}
+
+.right-image {
+  background: url('assets/img/computer.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 466px;
+  height: 279px
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-title {
+  font-size: 42px;
+  color: #2b2b2b
+}
+
+.subTitle-contain {
+  padding-top: 13px
+}
+
+.about-subTitle {
+  font-size: 18px;
+  color: #949494
+}
+
+.about-text {
+  list-style-position: inside;
+  line-height: 2em;
+  font-size: 16px;
+  color: #474747
+}
+
+.application {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff
+}
+
+.item-bottom {
+  width: 315px;
+  height: 236px;
+  background: url('assets/img/app-background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.bottom2 {
+  background: url('assets/img/app-background2.jpg')
+}
+
+.bottom3 {
+  background: url('assets/img/app-background3.jpg')
+}
+
+.bottom4 {
+  background: url('assets/img/app-background4.jpg')
+}
+
+.bottom5 {
+  background: url('assets/img/app-background5.jpg')
+}
+
+.bottom6 {
+  background: url('assets/img/app-background6.jpg')
+}
+
+.item-bottom-contain {
+  margin-top: 0;
+  flex-wrap: wrap
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(25, 25, 25, .6)
+}
+
+.sample {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f7fa
+}
+
+.sample-item {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 256px;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px
+}
+
+.sample-item-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.address-text {
+  font-size: 32px;
+  color: #2b2b2b
+}
+
+.address {
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+.sample-item-image {
+  width: 178px;
+  height: 178px;
+  background: url('assets/img/qr-code.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.sample2 {
+  background: url('assets/img/qr-code2.jpg')
+}
+
+.sample3 {
+  background: url('assets/img/qr-code3.jpg')
+}
+
+.sample4 {
+  background: url('assets/img/qr-code4.jpg')
+}
+
+.phone-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.phone-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px
+}
+
+.phone-image {
+  width: 24px;
+  height: 24px;
+  background: url('assets/img/phone.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px
+}
+
+.phone-text {
+  font-size: 20px;
+  color: #f06262
+}
+
+.foot {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #202020
+}
+
+.footer {
+  text-align: center;
+}
+.copyright {
+  font-size: 14px;
+  color: #545252;
+  text-align: center
+}
+.copyright a{
+  color: #545252;
+}
+.copyright a:hover{
+  color: #fff;
+}
+
+.to-top {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+  width: 30px;
+  height: 30px;
+  bottom: 50px;
+  right: 250px;
+  cursor: pointer;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, .3)
+}
+
+.to-top-image {
+  width: 24px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 3px;
+  background: url('assets/img/to-top.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.to-top-text {
+  position: absolute;
+  transition: all .25s;
+  -moz-transition: all .25s;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  background-color: rgba(0, 0, 0, .3);
+  top: 20%;
+  right: -50%;
+  width: 60px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 1;
+  color: #fff
+}
+
+.circl {
+  border-width: 2px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-family: HYQiHei;
+  color: #fff
+}
+
+.spot {
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -4px;
+  right: 13px;
+  width: 11px;
+  height: 11px
+}
+
+.header-area {
+  background-color: #7966ed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  left: 0;
+  z-index: 300;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s
+}
+
+.active {
+  border-bottom: 1px solid #fff
+}
+
+.navbar-expand-lg {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.header-area nav a:focus,
+.header-area nav a:hover {
+  color: #fff
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .header-area nav a {
+    padding: .5em
+  }
+}
+
+.header-area.sticky {
+  margin-top: 0
+}
+
+.hero-area {
+  position: relative;
+  z-index: 1
+}
+
+.slide-container {
+  position: absolute;
+  left: 0;
+  width: 400%;
+  height: 100%
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden
+}
+
+.hero-area .hero-slides {
+  position: relative;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10
+}
+
+.hero-area .hero-slides .single-hero-slide {
+  height: 540px;
+  position: relative;
+  z-index: 1
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .hero-area .hero-slides .single-hero-slide {
+    height: 450px
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .hero-area .hero-slides .single-hero-slide {
+    height: 400px
+  }
+}
+
+.background-overlay {
+  position: relative;
+  z-index: 2
+}
+
+.bg-img {
+  background-color: #7966ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 100%
+}
+
+.slide-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%
+}
+
+.points {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  width: 276px;
+  margin-left: -138px;
+  overflow: hidden
+}
+
+.points li {
+  width: 72px;
+  height: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, .302);
+  float: left;
+  list-style: none;
+  cursor: pointer
+}
+
+.points li.point_on {
+  background-color: #fff
+}
+
+@media (min-width:1025px) {
+  .container {
+    width: 960px;
+    margin: 0 auto
+  }
+  .main {
+    left: 25%
+  }
+}
+
+@media (width:1024px) {
+  .container {
+    width: 960px;
+    margin: 0 auto
+  }
+  .main {
+    left: 10%
+  }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+  .container {
+    width: 80%;
+    margin: 0 auto
+  }
+  .about-view {
+    width: 100%;
+  }
+  .left-text {
+    width: 80%;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  nav {
+    display: none
+  }
+  .main {
+    top: 25%
+  }
+  .slide {
+    height: 350px
+  }
+  .title {
+    font-size: 30px
+  }
+  .bg-img {
+    background-size: auto
+  }
+  .center-title {
+    font-size: 30px
+  }
+  .item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .item-title {
+    font-size: 25px
+  }
+  .about-title {
+    font-size: 30px
+  }
+  .item-text {
+    font-size: 15px
+  }
+  .item {
+    width: 40%;
+    height: 140px
+  }
+  .item-bottom {
+    width: 45%;
+    height: 180px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .about-contain {
+    flex-direction: column;
+    align-items: center
+  }
+  .right-image {
+    width: 80%;
+    margin-top: 35px
+  }
+  .sample-item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .sample-item-image {
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .sample-item {
+    width: 45%;
+    margin: 0;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px
+  }
+  .phone-item {
+    margin: 10px
+  }
+  .to-top {
+    display: none
+  }
+}
+
+@media (min-width:400px) and (max-width:767px) {
+  .container {
+    width: 80%;
+    margin: 0 auto
+  }
+  .about-view {
+    width: 100%;
+  }
+
+  .left-text {
+    width: 80%;
+  }
+
+  .about {
+    padding-bottom: 0;
+  }
+  nav {
+    display: none
+  }
+  .main {
+    top: 25%
+  }
+  .slide {
+    height: 350px
+  }
+  .title {
+    font-size: 30px
+  }
+  .bg-img {
+    background-size: auto
+  }
+  .center-title {
+    font-size: 30px
+  }
+  .item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .item-title {
+    font-size: 25px
+  }
+  .about-title {
+    font-size: 30px
+  }
+  .item-text {
+    font-size: 15px
+  }
+  .item {
+    width: 37%;
+    height: 180px
+  }
+  .item-bottom {
+    width: 48%;
+    height: 120px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .about-contain {
+    flex-direction: column;
+    align-items: center
+  }
+  .right-image {
+    width: 100%;
+    margin-top: 35px
+  }
+  .sample-item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .sample-item-image {
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .sample-item {
+    width: 48%;
+    margin: 0;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px
+  }
+  .phone-item {
+    margin: 10px
+  }
+  .to-top {
+    display: none
+  }
+  .points {
+    bottom: 10px
+  }
+}
+
+@media (max-width:480px) {
+  .container {
+    width: 80%;
+    margin: 0 auto
+  }
+  .about-view {
+    width: 100%;
+  }
+  .left-text {
+    width: 80%;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  .sub-title-container {
+    text-align: left
+  }
+  nav {
+    display: none
+  }
+  .main {
+    top: 25%
+  }
+  .slide {
+    height: 300px
+  }
+  .title {
+    font-size: 30px
+  }
+  .bg-img {
+    background-size: auto
+  }
+  .center-title {
+    font-size: 30px
+  }
+  .item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .item-title {
+    font-size: 25px
+  }
+  .about-title {
+    font-size: 30px
+  }
+  .points {
+    bottom: 10px
+  }
+  .item-text {
+    font-size: 15px
+  }
+  .item {
+    width: 34%;
+    height: 180px
+  }
+  .item-bottom {
+    width: 48%;
+    height: 120px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .about-contain {
+    flex-direction: column;
+    align-items: center
+  }
+  .right-image {
+    width: 100%;
+    margin-top: 35px
+  }
+  .sample-item-center {
+    flex-wrap: wrap;
+    align-items: center
+  }
+  .sample-item-image {
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center center
+  }
+  .sample-item {
+    width: 48%;
+    margin: 0;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px
+  }
+  .phone-item {
+    margin: 10px
+  }
+  .points {
+    bottom: 10px
+  }
+  .to-top {
+    display: none
+  }
+  .phone-contain {
+    flex-direction: column
+  }
+}
+</style>
+</head>
+<body>
+<div class="header-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-container">
+          <div class="navbar-brand">
+            <!-- Logo -->
+            <div class="circl">
+              H
+              <div class="spot"></div>
+            </div>
+            <a href="/">氢店</a>
+          </div>
+          <!-- Navbar Toggler -->
+          <nav>
+            <a href="#center" name="center">优势</a>
+            <a href="#about" name="about">关于</a>
+            <a href="#application" name="application">场景</a>
+            <a href="#sample" name="sample">案例</a>
+            <a href="#address" name="address">联系</a>
+            <a href="https://merchant.qing-shop.com">商户登入</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide" id="top">
+  <!-- Hero Slides Area -->
+  <div class="slide-container">
+    <!-- Single Slide -->
+    <div class="slide-active bg-img">
+      <img class="slide-img" src="assets/img/bg2.png" alt="s" />
+      <div class="container main">
+        <h1 class="title">氢店小程序商城</h1>
+        <ul class="text-contain">
+          <li>微信公众平台注册小程序账号</li>
+          <li>完成账号认证</li>
+          <li>后台生成小程序代码包</li>
+          <li>一键授权，自动生成，自动上线</li>
+        </ul>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="center" id="center">
+  <div class="container">
+    <div class="center-title">
+      <div class="title-container">
+        <span class="center-title">氢店小程序的优势</span>
+      </div>
+      <div class="sub-title-container">
+        <span class="sub-title">共享微信9亿用户，助您畅享小程序红利</span>
+      </div>
+    </div>
+    <div class="item-center">
+      <div class="item">
+        <div class="item-title-container">
+          <span class="item-title">极速生成</span>
+        </div>
+        <div class="item-text-container">
+          <span class="item-text">灵活可视化模块制作，即刻生成小程序</span>
+        </div>
+      </div>
+      <div class="item item2">
+        <div class="item-title-container">
+          <span class="item-title">品牌打造</span>
+        </div>
+        <div class="item-text-container">
+          <span class="item-text">独立小程序入口，打造专属品牌形象</span>
+        </div>
+      </div>
+      <div class="item item3">
+        <div class="item-title-container">
+          <span class="item-title">快速响应</span>
+        </div>
+        <div class="item-text-container">
+          <span class="item-text">专业的客服团队，随时响应并解决您的问题</span>
+        </div>
+      </div>
+      <div class="item item4">
+        <div class="item-title-container">
+          <span class="item-title">实用便捷</span>
+        </div>
+        <div class="item-text-container">
+          <span class="item-text">用户无需安装，用完即走，降低使用门槛</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about" id="about">
+  <div class="container about-view">
+    <div class="about-contain">
+      <div class="left-text">
+        <div>
+          <div>
+            <span class="about-title">
+              关于氢店小程序
+            </span>
+          </div>
+          <div class="subTitle-contain">
+            <span class="about-subTitle">
+              让门店经营更简单
+            </span>
+          </div>
+        </div>
+        <ul class="about-text-contain">
+          <li class="about-text">提供多样店铺模版，快速搭建网上商城</li>
+          <li class="about-text">从渠道打通、会员管理到精准客户营销，全方位覆盖经营场景</li>
+          <li class="about-text">提供安全可靠的技术支持，你只需要专注发展你的业务</li>
+        </ul>
+      </div>
+      <div class="right-image">
+    </div>
+    </div>
+  </div>
+</div>
+<div class="application" id="application">
+  <div class="container">
+    <div class="center-title">
+      <div class="title-container">
+        <span class="center-title">应用场景</span>
+      </div>
+      <div class="title-container">
+        <span class="sub-title">每个商业计划我们鼎力相助</span>
+      </div>
+    </div>
+    <div class="item-center item-bottom-contain">
+      <div class="item-bottom">
+        <div class="inner">
+          <span class="item-title">美妆护肤</span>
+        </div>
+      </div>
+      <div class="item-bottom bottom2">
+        <div class="inner">
+          <span class="item-title">餐饮食品</span>
+        </div>
+      </div>
+      <div class="item-bottom bottom3">
+        <div class="inner">
+          <span class="item-title">医疗健康</span>
+        </div>
+      </div>
+      <div class="item-bottom bottom4">
+        <div class="inner">
+          <span class="item-title">商品分销</span>
+        </div>
+      </div>
+      <div class="item-bottom bottom5">
+        <div class="inner">
+          <span class="item-title">教育培训</span>
+        </div>
+      </div>
+      <div class="item-bottom bottom6">
+        <div class="inner">
+          <span class="item-title">酒店预定</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sample" id="sample">
+  <div class="container">
+      <div class="title-container">
+        <span class="center-title">案例</span>
+      </div>
+      <div class="sample-item-center">
+        <div class="sample-item">
+          <div class="sample-item-image">
+          </div>
+          <div class="sample-text-container">
+            <span class="sample-text">雲州集商城</span>
+          </div>
+        </div>
+        <div class="sample-item">
+          <div class="sample-item-image sample2">
+          </div>
+          <div class="sample-text-container">
+            <span class="sample-text">丽明商城</span>
+          </div>
+        </div>
+        <div class="sample-item">
+          <div class="sample-item-image sample3">
+          </div>
+          <div class="sample-text-container">
+            <span class="sample-text">轻店数码优选</span>
+          </div>
+        </div>
+        <div class="sample-item">
+          <div class="sample-item-image sample4">
+          </div>
+          <div class="sample-text-container">
+            <span class="sample-text">云大文创品牌文化店</span>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="address" id="address">
+  <div class="container">
+    <div class="title-container">
+      <span class="address-text">昆明市一二一云大科技创业园（二楼）</span>
+    </div>
+    <div class="phone-contain">
+      <div class="phone-item">
+        <div class="phone-image"></div>
+        <span class="phone-text">13987640475</span>
+      </div>
+      <div class="phone-item">
+        <div class="phone-image"></div>
+        <span class="phone-text">13987640475</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <div class="container footer">
+    <p class="copyright">Copyright © 2018 <a href="https://www.rogue.group" target="_blank">ROGUE.GROUP</a> 滇ICP备17009919号</p>
+  </div>
+</div>
+<div class="to-top">
+  <div id="scrollToTop" class="to-top-image">
+  </div>
+  <p class="to-top-text">返回顶部</p>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  let imageLength = $('.bg-img').length;
+  let i = 1;
+  function banner() {
+    if (i < 0) {
+      i = imageLength - 1;
+    }
+    if (i > imageLength - 1) {
+      i = 0;
+    }
+    $('.slide-container').animate({ 'left': (-i * 100) + '%' });
+    $('.points li').eq(i).addClass('point_on').siblings().removeClass();
+    i= i + 1;
+  }
+  let banner_timer = setInterval(banner, 3000);
+  window.onscroll = function() {
+    if (window.scrollY > 10) {
+      $('.to-top').css("visibility", "visible");
+    } else {
+    $('.to-top').css("visibility", "hidden");
+    }
+  }
+  $('.points li').click(function () {
+    i = $(this).index();
+    banner();
+  });
+  $("#scrollToTop").click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    });
+  $(".to-top").hover(function () {
+    $('.to-top-text').css({
+      "right": "-230%",
+      "opacity": 1
+      });
+  });
+  $(".to-top").mouseleave(function () {
+    $('.to-top-text').css({
+        "right": "-50%",
+        "opacity": 0
+    });
+  });
+  $("nav > a[href^=#]").click(function (ev) {
+    ev.preventDefault();
+    if (!$(this).hasClass('active')) {
+      $('nav > a').removeClass("active");
+      $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: ($("#" + $(this).prop('name')).offset().top - 75)
+      }, 500);
+    }
+  });
+});
+</script>
+</body>
+</html>
