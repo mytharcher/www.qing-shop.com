@@ -21,7 +21,6 @@ a {
 }
 
 a:hover {
-  color: #fff;
   text-decoration: none
 }
 
@@ -334,8 +333,8 @@ nav > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px
+  align-items: center;
+  margin: 0 2em;
 }
 
 .phone-image {
@@ -345,12 +344,16 @@ nav > a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-right: 10px
+  margin-right: .5em
 }
 
 .phone-text {
   font-size: 20px;
   color: #f06262
+}
+.phone-item span{
+  margin-left: 1em;
+  color: #999;
 }
 
 .foot {
@@ -1087,11 +1090,13 @@ nav > a {
     <div class="phone-contain">
       <div class="phone-item">
         <div class="phone-image"></div>
-        <span class="phone-text">13987640475</span>
+        <a href="tel:15974800508" class="phone-text">159 7480 0508</a>
+        <span>(赵经理)</span>
       </div>
       <div class="phone-item">
         <div class="phone-image"></div>
-        <span class="phone-text">13987640475</span>
+        <a href="tel:13987640475" class="phone-text">139 8764 0475</a>
+        <span>(尹经理)</span>
       </div>
     </div>
   </div>
