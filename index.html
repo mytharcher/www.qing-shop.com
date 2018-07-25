@@ -193,19 +193,23 @@ nav > a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  width: 60%;
+}
+@media (min-width:980px){
+  .left-text{
+    margin-right: 2em;
+  }
 }
 
 .about-title {
   font-size: 42px;
+  font-weight: normal;
   color: #2b2b2b
 }
 
-.subTitle-contain {
-  padding-top: 13px
-}
-
 .about-subTitle {
-  font-size: 18px;
+  padding-top: 13px;
+  line-height: 1.6em;
   color: #949494
 }
 
@@ -898,7 +902,6 @@ nav > a {
           </div>
           <!-- Navbar Toggler -->
           <nav>
-            <a href="#center" name="center">优势</a>
             <a href="#about" name="about">关于</a>
             <a href="#application" name="application">场景</a>
             <a href="#sample" name="sample">案例</a>
@@ -928,7 +931,7 @@ nav > a {
     </div>
    </div>
 </div>
-<div class="center" id="center">
+<div class="center">
   <div class="container">
     <div class="center-title">
       <div class="title-container">
@@ -978,18 +981,8 @@ nav > a {
   <div class="container about-view">
     <div class="about-contain">
       <div class="left-text">
-        <div>
-          <div>
-            <span class="about-title">
-              关于氢店小程序
-            </span>
-          </div>
-          <div class="subTitle-contain">
-            <span class="about-subTitle">
-              让门店经营更简单
-            </span>
-          </div>
-        </div>
+        <h2 class="about-title">关于氢店小程序</h2>
+        <p class="about-subTitle">氢店作为云南诺格信息技术有限公司旗下的核心产品，来源于公司多年来对客户提供技术服务的市场把握和经验积累，是全力为商家打造的的商城平台系统，致力于让电商商家的经营更简单。</p>
         <ul class="about-text-contain">
           <li class="about-text">提供多样店铺模版，快速搭建网上商城</li>
           <li class="about-text">从渠道打通、会员管理到精准客户营销，全方位覆盖经营场景</li>
