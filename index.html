@@ -309,22 +309,25 @@ nav > a {
 .sample-item-image {
   width: 178px;
   height: 178px;
-  background: url('assets/img/qr-code.jpg');
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat
 }
 
-.sample2 {
-  background: url('assets/img/qr-code2.jpg')
+.sample-item:nth-child(1) .sample-item-image {
+  background-image: url('assets/img/qr-code1.jpg')
 }
 
-.sample3 {
-  background: url('assets/img/qr-code3.jpg')
+.sample-item:nth-child(2) .sample-item-image {
+  background-image: url('assets/img/qr-code2.jpg')
 }
 
-.sample4 {
-  background: url('assets/img/qr-code4.jpg')
+.sample-item:nth-child(3) .sample-item-image {
+  background-image: url('assets/img/qr-code3.jpg')
+}
+
+.sample-item:nth-child(4) .sample-item-image {
+  background-image: url('assets/img/qr-code4.jpg')
 }
 
 .phone-contain {
@@ -1048,25 +1051,25 @@ nav > a {
           <div class="sample-item-image">
           </div>
           <div class="sample-text-container">
-            <span class="sample-text">雲州集商城</span>
+            <span class="sample-text">启迪创物</span>
           </div>
         </div>
         <div class="sample-item">
-          <div class="sample-item-image sample2">
+          <div class="sample-item-image">
           </div>
           <div class="sample-text-container">
             <span class="sample-text">丽明商城</span>
           </div>
         </div>
         <div class="sample-item">
-          <div class="sample-item-image sample3">
+          <div class="sample-item-image">
           </div>
           <div class="sample-text-container">
             <span class="sample-text">轻店数码优选</span>
           </div>
         </div>
         <div class="sample-item">
-          <div class="sample-item-image sample4">
+          <div class="sample-item-image">
           </div>
           <div class="sample-text-container">
             <span class="sample-text">云大文创品牌文化店</span>
